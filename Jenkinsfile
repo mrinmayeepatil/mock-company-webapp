@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                echo 'Running on Jenkins agent'
                 sh './gradlew assemble'
             }
         }
@@ -15,4 +16,5 @@ pipeline {
         }
     }
 }
+
 
